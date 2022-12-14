@@ -50,5 +50,6 @@ extern stack_t *STACK;
 
 /* The Operations */
 void push(int n);
+void pall(void);
 
 #endif
