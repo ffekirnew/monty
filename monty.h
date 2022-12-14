@@ -1,8 +1,9 @@
 #ifndef _MONTY_HEADER_
 #define _MONTY_HEADER_
 
-#define EXIST_FAILURE 1
-#define EXIST_FAILURE 0
+#define EXIT_FAILURE 1
+#define EXIT_SUCCESS 0
+
 #include <stdio.h>
 
 #include <sys/types.h>               
