@@ -7,12 +7,13 @@ int main(void)
     STACK = malloc(sizeof(stack_t));
     printf("%d", STACK->n);
     push(5);
-    printf("%d", STACK->n);
     push(3);
-    printf("%d", STACK->n);
     push(5);
-    printf("%d", STACK->n);
     push(3);
-    printf("%d", STACK->n);
+    push(1);
+    push(2);
+    push(6);
+    push(37);
+    pall();
     return (0);
 }
