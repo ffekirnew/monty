@@ -7,7 +7,7 @@
  *
  * Return: 0 for success, 1 for failure
  */
-int int main(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
 	/*
 	trying to open the file here with the system call open() into fd
