@@ -2,8 +2,10 @@
 #define _MONTY_HEADER_
 
 #define EXIT_FAILURE 1
-#define EXIT_FAILURE 0
+#define EXIT_SUCCESS 0
+
 #include <stdio.h>
+#include <stdlib.h>
 
 #include <sys/types.h>               
 #include <sys/stat.h>          
@@ -40,5 +42,13 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+
+/* The Stack Data Structure */
+extern stack_t *STACK;
+
+
+/* The Operations */
+void push(int n);
 
 #endif
