@@ -1,6 +1,16 @@
 #ifndef _MONTY_HEADER_
 #define _MONTY_HEADER_
 
+#define EXIST_FAILURE 1
+#define EXIST_FAILURE 0
+#include <stdio.h>
+
+#include <sys/types.h>               
+#include <sys/stat.h>          
+#include <fcntl.h>
+
+#include <unistd.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
