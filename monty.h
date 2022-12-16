@@ -1,17 +1,10 @@
 #ifndef _MONTY_HEADER_
 #define _MONTY_HEADER_
 
-#define EXIT_FAILURE 1
-#define EXIT_SUCCESS 0
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-#include <sys/types.h>               
-#include <sys/stat.h>          
-#include <fcntl.h>
-
-#include <unistd.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -48,8 +41,19 @@ typedef struct instruction_s
 extern stack_t *STACK;
 
 
-/* The Operations */
-void push(int n);
-void pall(void);
+/* The Operations - Mandatory */
+void op_push(stack_t **stack, unsigned int line_number);
+void op_pall(stack_t **stack, unsigned int line_number);
+void op_pint(stack_t **stack, unsigned int line_number);
+void op_pop(stack_t **stack, unsigned int line_number);
+void op_swap(stack_t **stack, unsigned int line_number);
+void op_add(stack_t **stack, unsigned int line_number);
+void op_nop(stack_t **stack, unsigned int line_number);
 
+void (*get_op_func(char *opcode))(stack_t **stack, unsigned int line_number);
+
+
+char *read_file(const char *filename);
+
+char *temp(char *string);
 #endif
