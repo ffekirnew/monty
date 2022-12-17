@@ -76,4 +76,5 @@ void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
 void f_sub(stack_t **head, unsigned int counter);
+void f_div(stack_t **head, unsigned int counter);
 #endif
